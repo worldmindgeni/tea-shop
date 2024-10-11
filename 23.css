@@ -1,0 +1,434 @@
+@import url('reponsive.css');
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('03/фон1.png'), url('03/21.png'); /* Основной фон и текстура */
+    background-size: cover, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    color: #d6d66f;
+    margin: 0;
+    padding: 0;
+    background-blend-mode: normal, multiply; /* Применение прозрачности */
+    opacity: 0.8; /* Прозрачность текстуры */
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-image: url('03/фон1.png'), url('03/21.png'); 
+    background-size: cover, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-blend-mode: normal, multiply;
+    opacity: 0.8; /* Прозрачность текстуры */
+}
+
+.hero .container h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #e8ff00;
+}
+
+.hero .made-local {
+    color: #b5a675;
+    font-size: 16px;
+}
+
+.hero .description {
+    color: #d4e31b;
+    font-size: 18px;
+    margin: 10px 0;
+}
+ 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: 2px solid #d4e31b;
+    background-color: #5e4e2e;
+    color: #d4e31b;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 18px;
+    height: 18px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    background-image: url('03/фон1.png'), url('03/21.png');
+    background-size: cover, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-blend-mode: normal, multiply;
+    opacity: 0.8; /* Прозрачность текстуры */
+}
+
+.header-text {
+    width: 45%;
+    position: relative;
+}
+
+.header-text h1 {
+    color: #c8d44a;
+    font-size: 55px;
+    margin: 0;
+}
+
+.header-text p {
+    color: #c8d44a;
+    margin: 15px 0;
+}
+
+.header-text p small {
+    font-size: 12px;
+}
+
+.header-text a {
+    display: inline-block;
+    background-color: #b4c541;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.header-text a:hover {
+    background-color: #d4e656;
+}
+
+.header-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.what-we-do-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    background-image: url('03/фон01.png'), url('path_to_texture.png'); 
+    background-size: cover, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-blend-mode: normal, multiply;
+    opacity: 0.8; /* Прозрачность текстуры */
+}
+
+.what-we-do-images {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+    z-index: 0;
+}
+
+.what-we-do-images img {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.what-we-do-text {
+    width: 35%;
+}
+
+.what-we-do-text h2 {
+    color: #c8d44a;
+    font-size: 45px;
+    margin: 0;
+}
+
+.what-we-do-text p {
+    color: #c8d44a;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.what-we-do-text a {
+    display: inline-block;
+    background-color: #b4c541;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.what-we-do-text a:hover {
+    background-color: #d4e656;
+}
+
+
+.decorative {
+    position: absolute;
+    z-index: 1;
+}
+.symbol-1 {
+    top: -30%;
+    right: 5%;
+    width: 40px;
+}
+
+.symbol-2 {
+    top: -23%;
+    right: -2%;
+    width: 40px;
+}
+
+.sidenav {
+ height: 100%;
+width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0px;
+ left: 0;
+ background-image: url('03/фон01.png'), url('03/21.png'); 
+ background-size: cover, cover;
+ background-repeat: no-repeat, repeat;
+background-position: center, center;
+background-blend-mode: normal, multiply;
+opacity: 0.8; /* Прозрачность текстуры */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #d4e31b;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .position-span {
+    float: right;
+    margin-top: -10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  .new-arrival {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #574A3B;
+}
+
+.new-arrival .left {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.new-arrival .right img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.new-arrivals {
+    padding: 50px 20px;
+}
+
+.tea-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tea-item {
+    background-color: #766951;
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tea-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.testimonials {
+    padding: 50px 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #766951;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tea-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #3d392a;
+}
+
+.tea-item {
+    width: 40%;
+    text-align: center;
+}
+
+.tea-item img {
+    width: 100%;
+    height: auto;
+}
+
+.tea-item h2 {
+    color: #97c228;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.tea-item p {
+    color: #d7d3b6;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+.newsletter {
+    background-color: #837e6b;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    color: #97c228;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 40%;
+    font-size: 16px;
+    border: 1px solid #97c228;
+    background-color: #97c228;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #97c227;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.newsletter button:hover {
+    background-color: #83a421;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #52c53b;
+}
+
+.footer-section {
+    margin-right: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.footer-bottom p {
+    margin: 0; 
+}
+body, .hero, .what-we-do-section, .sidenav {
+    opacity: 1; /* Уберите или уменьшите прозрачность */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
