@@ -100,13 +100,13 @@ body {
 }
 
 .header-text h1 {
-    color: #c8d44a;
+    color: #97c228;
     font-size: 55px;
     margin: 0;
 }
 
 .header-text p {
-    color: #c8d44a;
+    color: #97c228;
     margin: 15px 0;
 }
 
@@ -164,13 +164,13 @@ body {
 }
 
 .what-we-do-text h2 {
-    color: #c8d44a;
+    color: #97c228;
     font-size: 45px;
     margin: 0;
 }
 
 .what-we-do-text p {
-    color: #c8d44a;
+    color: #97c228;
     margin: 15px 0;
     font-size: 14px;
 }
@@ -205,7 +205,86 @@ body {
     right: -2%;
     width: 40px;
 }
-
+.symbol-3 {
+    top: 75%;
+    right: -130%;
+    width: 160px;
+}
+.symbol-4 {
+    top: 125%;
+    right: -105%;
+    width: 40px;
+}
+.symbol-5 {
+    top: 15%;
+    right: 8%;
+    width: 40px;
+}
+.symbol-6 {
+    top: 20%;
+    right: 5%;
+    width: 40px;
+}
+.symbol-7 {
+    top: 93%;
+    right: 92%;
+    width: 40px;
+}
+.symbol-8 {
+    top: 74%;
+    right: 93%;
+    width: 120px;
+}
+.symbol-9 {
+    top: 215%;
+    right: 95%;
+    width: 40px;
+}
+.symbol-10 {
+    top: 343%;
+    right: 75%;
+    width: 160px;
+}
+.symbol-11 {
+    top: 340%;
+    right: 75%;
+    width: 160px;
+}
+.symbol-12 {
+    top: 320%;
+    right: 48%;
+    width: 120px;
+}
+.symbol-13 {
+    top: 420%;
+    right: 8%;
+    width: 45px;
+}
+.symbol-14 {
+    top: 430%;
+    right: 5%;
+    width: 45px;
+}
+.symbol-15 {
+    top: 685%;
+    right: 89%;
+    width: 80px;
+}
+.symbol-16 {
+    top: 696%;
+    right: 88%;
+    width: 35px;
+}
+.symbol-17 {
+    top: 694%;
+    right: 9%;
+    width: 45px;
+}
+.symbol-18 {
+    top: 700%;
+    right: 5%;
+    width: 45px;
+}
 .sidenav {
  height: 100%;
 width: 0;
@@ -273,6 +352,7 @@ opacity: 0.8; /* Прозрачность текстуры */
 
 .new-arrival .right img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -294,8 +374,9 @@ opacity: 0.8; /* Прозрачность текстуры */
     text-align: center;
 }
 
-.tea-item img {
+.tea-item video {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 .testimonials {
@@ -311,6 +392,11 @@ opacity: 0.8; /* Прозрачность текстуры */
 .testimonial {
     background-color: #766951;
     padding: 20px;
+    border-radius: 10px;
+}
+.testimonial img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 .tea-section {
@@ -337,7 +423,7 @@ opacity: 0.8; /* Прозрачность текстуры */
 }
 
 .tea-item p {
-    color: #d7d3b6;
+    color: #97c228;
     line-height: 1.6;
     font-size: 14px;
 }
@@ -363,7 +449,12 @@ opacity: 0.8; /* Прозрачность текстуры */
     width: 40%;
     font-size: 16px;
     border: 1px solid #97c228;
-    background-color: #97c228;
+    background-color: transparent; /* Убираем фон */
+    color: #ffffff; /* Цвет текста */
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: #97c228; /* Цвет плейсхолдера */
 }
 
 .newsletter button {
@@ -373,6 +464,9 @@ opacity: 0.8; /* Прозрачность текстуры */
     color: white;
     cursor: pointer;
     font-size: 16px;
+    margin: 20px auto 0; /* Центрируем кнопку */
+    border-radius: 20px; /* Закруглим углы */
+    display: block;
 }
 
 .newsletter button:hover {
@@ -425,8 +519,14 @@ footer {
 .footer-bottom p {
     margin: 0; 
 }
+
+.footer-section ul li a:hover {
+    color: #ffffff; /* Изменяем цвет ссылки при наведении */
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+
 body, .hero, .what-we-do-section, .sidenav {
-    opacity: 1; /* Уберите или уменьшите прозрачность */
+    opacity: 1; 
 }
 img {
     max-width: 100%;

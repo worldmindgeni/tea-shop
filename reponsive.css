@@ -1,102 +1,269 @@
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
     .header-section {
         flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .header-text {
+        width: 100%;
         text-align: center;
     }
 
-    .header-text, .header-image {
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .header-text a {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .header-image {
         width: 100%;
+        text-align: center;
     }
 
-    .hero {
-        padding: 20px;
+    .header-image img {
+        max-width: 90%;
+        border-radius: 5px;
     }
 
+    .decorative {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
     .what-we-do-section {
         flex-direction: column;
+        padding: 20px 0;
     }
 
     .what-we-do-images {
         flex-direction: column;
         width: 100%;
+        gap: 10px;
     }
 
     .what-we-do-images img {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Каждое изображение занимает всю ширину контейнера */
     }
 
-    .what-we-do-text, .tea-item {
+    .what-we-do-text {
         width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .new-arrivals .tea-grid {
-        grid-template-columns: 1fr;
+    .what-we-do-text h2 {
+        font-size: 30px; /* Уменьшение размера заголовка */
+    }
+
+    .what-we-do-text p {
+        font-size: 14px; /* Небольшое изменение размера текста */
+    }
+
+    .what-we-do-text a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .decorative {
+        display: none; /* Убираем декоративные элементы на мобильных устройствах */
+    }
+}
+
+@media (max-width: 768px) {
+    .new-arrival {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .new-arrival .left {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .new-arrival .left h1 {
+        font-size: 30px; /* Уменьшение заголовков */
+    }
+
+    .new-arrival .left h2 {
+        font-size: 24px;
+    }
+
+    .new-arrival .left p {
+        font-size: 14px;
+    }
+
+    .new-arrival .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .new-arrival .right img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .decorative {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .new-arrivals {
+        padding: 20px 10px;
+    }
+
+    .tea-grid {
+        grid-template-columns: 1fr; /* Изменение на одноколоночную сетку */
+        gap: 10px; /* Уменьшение расстояния между элементами */
+    }
+
+    .tea-item {
+        padding: 20px; /* Уменьшение отступов */
+    }
+
+    .tea-item h2 {
+        font-size: 18px; /* Уменьшение размера заголовка */
+    }
+
+    .tea-item p {
+        font-size: 14px; /* Уменьшение текста */
+    }
+
+    .tea-item video {
+        max-width: 100%;
+        height: auto; /* Сохранение пропорций видео */
+    }
+
+    .decorative {
+        display: none; /* Убираем декоративные элементы для мобильных устройств */
+    }
+}
+
+@media (max-width: 768px) {
+    .tea-section {
+        flex-direction: column; /* Изменение направления flex на колонку */
+        padding: 20px;
+    }
+
+    .tea-item {
+        width: 100%; /* Каждая карточка будет занимать всю ширину */
+        margin-bottom: 20px; /* Добавляем отступ между элементами */
+    }
+
+    .tea-item h2 {
+        font-size: 20px; /* Уменьшение размера заголовка */
+    }
+
+    .tea-item p {
+        font-size: 14px; /* Оставляем размер текста удобным для чтения */
+    }
+
+    .tea-item img {
+        width: 100%; /* Убедимся, что изображение не выходит за границы */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 20px 10px;
     }
 
     .testimonial-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Изменяем сетку на одноколоночную */
+        gap: 15px; /* Уменьшаем отступы между элементами */
     }
 
-    .tea-section {
-        flex-direction: column;
-        align-items: center;
+    .testimonial {
+        padding: 15px; /* Уменьшаем внутренние отступы для мобильных */
+    }
+
+    .testimonial h2 {
+        font-size: 18px; /* Уменьшаем размер заголовков */
+    }
+
+    .testimonial p {
+        font-size: 14px; /* Сохраняем удобный для чтения размер текста */
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter {
+        padding: 20px 10px;
+    }
+
+    .newsletter h2 {
+        font-size: 24px; /* Уменьшаем размер заголовка */
     }
 
     .newsletter input[type="email"] {
-        width: 80%;
+        width: 80%; /* Увеличиваем ширину поля на мобильных устройствах */
+        font-size: 14px; /* Уменьшаем шрифт */
     }
 
+    .newsletter button {
+        width: 80%; /* Делаем кнопку шире на мобильных устройствах */
+        font-size: 14px; /* Уменьшаем шрифт */
+        padding: 10px; /* Корректируем отступы */
+    }
+
+    .decorative {
+        display: none; /* Скрываем декоративные элементы на мобильных устройствах */
+    }
+}
+
+@media (max-width: 768px) {
     footer {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Меняем на вертикальную структуру */
+        padding: 10px;
+        align-items: center; /* Центрируем элементы футера */
     }
 
     .footer-section {
         margin-right: 0;
-        text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Добавляем отступы между секциями */
+        text-align: center; /* Центрируем текст внутри секций */
+    }
+
+    .footer-section h3 {
+        font-size: 18px; /* Уменьшаем размер заголовков для мобильных */
+    }
+
+    .footer-section ul li {
+        margin-bottom: 10px;
     }
 
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: column; /* Переключаем на вертикальную структуру */
+        gap: 10px;
+        text-align: center; /* Центрируем текст */
     }
 
-    .search-bar {
-        flex-direction: column;
-    }
-
-    .search-bar input {
+    .social-icons {
+        justify-content: center; /* Центрируем иконки соцсетей */
         margin-bottom: 10px;
     }
-}
-@media (max-width: 768px) {
-    .hero {
-        padding: 20px;
+
+    .social-icons img {
+        width: 30px; /* Уменьшаем размер иконок для мобильных */
     }
 
-    h1, h2, h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .header-text a {
-        padding: 10px 20px;
-    }
-}
-@media (max-width: 450px) {
-    .header-section h1 {
-        font-size: 24px;
-    }
-
-    .header-text p {
-        font-size: 12px;
-    }
-
-    .new-arrival, .tea-item, .testimonial, .newsletter {
-        padding: 20px 10px;
+    .footer-bottom p {
+        font-size: 12px; /* Уменьшаем текст копирайта */
     }
 }
